@@ -1,0 +1,254 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  color: #545454;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.splash {
+  visibility: hidden;
+  transition: 1s ease-in-out;
+  background-color: #88b4af;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash img {
+  animation: myAnim 15s ease-in-out 0s infinite normal forwards;
+}
+
+/* Header */
+.header {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 60px;
+}
+
+.header div {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header */
+
+/* Hero */
+.hero {
+  width: 97%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero .left {
+  height: fit-content;
+  width: fit-content;
+}
+
+.greeting {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+}
+
+.greeting-name {
+  width: 340px;
+  transition: 0.5s ease-in-out;
+}
+
+.left p {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.cta {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta button {
+  cursor: pointer;
+  background-color: white;
+  padding: 12px 20px;
+  border: 2px solid #545454;
+  border-radius: 5px;
+  box-shadow: 7px 7px 0px -2px rgba(137, 181, 175, 1),
+    7px 7px 0px 0px rgba(84, 84, 84, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.cta button:hover {
+  box-shadow: 10px 10px 0px -2px rgba(137, 181, 175, 1),
+    10px 10px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.cta button:active {
+  box-shadow: 3px 3px 0px -2px rgba(137, 181, 175, 1),
+    3px 3px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.cta div {
+  display: flex;
+  gap: 20px;
+}
+
+.cta img {
+  width: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.cta img:hover {
+  rotate: 360deg;
+}
+
+.hero .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+/* .hero .right img { */
+/* width: 65%; */
+/* } */
+
+.hero-front {
+  animation: myAnim 15s ease-in-out 0s infinite normal forwards;
+  width: 22%;
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-back {
+  animation: myAnim 19s ease-in-out 0s infinite normal forwards;
+  width: 75%;
+}
+
+/* Hero */
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  body {
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    padding: 20px 0px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header div {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero {
+    margin-top: 20%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .hero .left {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: end;
+    gap: 8px;
+  }
+
+  .greeting-hi {
+    width: 130px;
+  }
+
+  .greeting-name {
+    width: 230px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .left p {
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .hero-front {
+    animation: myAnim 15s ease-in-out 0s infinite normal forwards;
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .hero-back {
+    animation: myAnim 19s ease-in-out 0s infinite normal forwards;
+    width: 85%;
+  }
+}
