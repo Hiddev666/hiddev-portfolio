@@ -4,11 +4,16 @@ html {
   padding: 0;
   font-family: Work Sans;
   color: #545454;
+  scroll-behavior: smooth;
 }
 
 @font-face {
   font-family: Work Sans;
   src: url(../font/WorkSans-VariableFont_wght.ttf);
+}
+
+a {
+  text-decoration: none;
 }
 
 .splash {
@@ -46,6 +51,19 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+
+.header div p {
+  transition: .3s ease-in-out;
+}
+
+.header div p:hover {
+  font-weight: 600;
+}
+
+.header div p:active {
+
+}
+
 
 /* Header */
 
@@ -125,7 +143,7 @@ html {
 
 .hero .right {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   width: fit-content;
 }
@@ -143,10 +161,74 @@ html {
 
 .hero-back {
   animation: myAnim 19s ease-in-out 0s infinite normal forwards;
-  width: 85%;
+  width: 70%;
 }
 
 /* Hero */
+
+/* About */
+.about {
+  margin-top: 4%;
+  margin-bottom: 6%;
+  padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  animation: myAnim 13s ease-in-out 0s infinite normal forwards;
+
+  width: 90%;
+  background-color: white;
+  padding: 40px 40px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header img {
+  width: 50px;
+  border-radius: 100%;
+  border: 1px solid #545454;
+}
+
+.card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-text {
+  margin-left: 70px;
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.card-footer {
+  margin-top: 2%;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer div {
+  display: flex;
+  gap: 10px;
+}
+
+.card-footer img {
+  width: 20px;
+}
 
 @keyframes myAnim {
   0%,
@@ -195,10 +277,10 @@ html {
   }
 
   .header div {
-    width: 70%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .hero {
@@ -226,16 +308,16 @@ html {
   }
 
   .greeting-hi {
-    width: 130px;
+    width: 110px;
   }
 
   .greeting-name {
-    width: 230px;
+    width: 220px;
     transition: 0.5s ease-in-out;
   }
 
   .left p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
 
@@ -256,5 +338,20 @@ html {
   .hero-back {
     animation: myAnim 19s ease-in-out 0s infinite normal forwards;
     width: 85%;
+  }
+
+  .about {
+    margin-top: 0%;
+    padding: 100px 30px;
+  }
+
+  .about-text {
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  
+  .card-footer {
+    margin-left: 0px;
+    margin-top: 10%;
   }
 }
