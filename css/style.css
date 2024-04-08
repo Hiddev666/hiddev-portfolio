@@ -46,14 +46,14 @@ a {
 }
 
 .header div {
-  width: 30%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .header div p {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .header div p:hover {
@@ -61,9 +61,7 @@ a {
 }
 
 .header div p:active {
-
 }
-
 
 /* Header */
 
@@ -168,17 +166,14 @@ a {
 
 /* About */
 .about {
-  margin-top: 4%;
-  margin-bottom: 6%;
-  padding: 100px 50px;
+  width: 60%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .card {
   animation: myAnim 13s ease-in-out 0s infinite normal forwards;
-
   width: 90%;
   background-color: white;
   padding: 40px 40px;
@@ -230,6 +225,74 @@ a {
   width: 20px;
 }
 
+/* Educations */
+.educations {
+  width: 40%;
+  padding: 0px 10px;
+  justify-content: start;
+  display: flex;
+}
+
+.education-left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 25%;
+}
+
+.education-left img {
+  width: 50px;
+  border: 2px solid #545454;
+  border-radius: 100%;
+}
+
+.education-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 22px;
+}
+
+.education-card {
+  width: 97%;
+  background-color: white;
+  padding: 10px 10px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.education-card:hover {
+  box-shadow: 10px 10px 0px -2px rgba(137, 181, 175, 1),
+    10px 10px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.education-card div {
+  width: 100%;
+  display: flex;
+  gap: 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-card h2 {
+  animation: educations 2s ease 0s infinite normal forwards;
+}
+
+.education-card p {
+  margin-top: 5px;
+}
+
+.resume {
+  margin-top: 7%;
+  display: flex;
+  padding: 50px 50px;
+}
+/* Educations */
+
 @keyframes myAnim {
   0%,
   100% {
@@ -258,6 +321,35 @@ a {
   }
 }
 
+@keyframes educations {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 /* Responsive */
 @media only screen and (max-width: 768px) {
 }
@@ -277,7 +369,7 @@ a {
   }
 
   .header div {
-    width: 90%;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -340,18 +432,48 @@ a {
     width: 85%;
   }
 
+  .resume {
+    margin-top: 30%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 40px;
+  }
+
   .about {
-    margin-top: 0%;
-    padding: 100px 30px;
+    width: 100%;
+    width: 100%;
+  }
+
+  .card {
+    padding: 30px 30px;
   }
 
   .about-text {
     margin-left: 0px;
     font-size: 16px;
   }
-  
+
   .card-footer {
     margin-left: 0px;
     margin-top: 10%;
+  }
+
+  .educations {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+  }
+
+  .education-card {
+    width: 90%;
+  }
+
+  .education-left {
+    width: 20%;
+  }
+
+  .education-right {
+    align-items: start;
+    width: 80%;
   }
 }
