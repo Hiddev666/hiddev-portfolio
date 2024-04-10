@@ -169,7 +169,7 @@ a {
   width: 60%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .card {
@@ -240,8 +240,13 @@ a {
   width: 25%;
 }
 
-.education-left img {
+.education-left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
   width: 50px;
+  height: 50px;
   border: 2px solid #545454;
   border-radius: 100%;
 }
@@ -278,6 +283,25 @@ a {
   align-items: center;
 }
 
+.education-card button {
+  cursor: pointer;
+  display: flex;
+  margin-top: 8%;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 10px;
+  transition: .3s ease-in-out;
+}
+
+.education-card button:hover {
+  background-color: #eaeaea;
+}
+
 .education-card h2 {
   animation: educations 2s ease 0s infinite normal forwards;
 }
@@ -290,8 +314,91 @@ a {
   margin-top: 7%;
   display: flex;
   padding: 50px 50px;
+  gap: 10px;
 }
 /* Educations */
+
+
+/* EXP */
+.exp {
+  justify-content: center;
+  display: flex;
+}
+
+.exp-left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 20%;
+}
+
+.exp-left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #545454;
+  border-radius: 100%;
+}
+
+.exp-right {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: start;
+  gap: 1.5%;
+}
+
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16%;
+  height: 230px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 10px 10px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.exp-card:hover {
+  box-shadow: 10px 10px 0px -2px rgba(137, 181, 175, 1),
+    10px 10px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.exp-card div {
+}
+
+.exp-card button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 10px;
+  transition: .3s ease-in-out;
+}
+
+.exp-card button:hover {
+  background-color: #eaeaea;
+}
+
+.exp-card h2 {
+  animation: educations 2s ease 0s infinite normal forwards;
+}
+
+.exp-card p {
+  margin-top: 5px;
+}
 
 @keyframes myAnim {
   0%,
@@ -471,9 +578,29 @@ a {
   .education-left {
     width: 20%;
   }
-
+  
   .education-right {
     align-items: start;
     width: 80%;
   }
+
+  .exp {
+    padding: 0px 20px;
+    display: flex;
+  }
+
+  .exp-left {
+    width: 20%;
+  }
+
+  .exp-right {
+    align-items: start;
+    width: 80%;
+  }
+  
+  .exp-card {
+    width: 85%;
+    height: 190px;
+  }
+
 }
