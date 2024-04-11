@@ -34,3 +34,16 @@ setInterval(() => {
 function change(index) {
     greeting.src = greetings[index]["img"]
 }
+
+
+const popup = document.getElementById("popup")
+const certificate = document.getElementById("certificate")
+
+function showCertificate(img) {
+    if(popup.style.visibility == "visible") {
+        popup.style.visibility = "hidden"
+    } else {
+        certificate.src = img
+        popup.style.visibility = "visible"
+    }
+}

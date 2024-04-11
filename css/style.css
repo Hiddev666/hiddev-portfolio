@@ -23,7 +23,7 @@ a {
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 3;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,6 +32,54 @@ a {
 .splash img {
   animation: myAnim 15s ease-in-out 0s infinite normal forwards;
 }
+
+/* Popup */
+.popup {
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;  
+  z-index: 4;
+}
+
+.popup-card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.popup-card img {
+  width: 100%;
+}
+
+.popup-card button {
+  cursor: pointer;
+  display: flex;
+  margin-top: 8%;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 10px;
+  transition: .3s ease-in-out;
+}
+
+/* Popup */
 
 /* Header */
 .header {
@@ -67,8 +115,7 @@ a {
 
 /* Hero */
 .hero {
-  padding: 0px 20px;
-  width: 97%;
+  padding: 0px 0px;
   margin-top: 3%;
   display: flex;
   align-items: center;
@@ -255,7 +302,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: end;
   gap: 22px;
 }
 
@@ -346,7 +393,7 @@ a {
 .exp-right {
   flex-wrap: wrap;
   display: flex;
-  align-items: start;
+  align-items: end;
   gap: 1.5%;
 }
 
@@ -355,7 +402,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   width: 16%;
-  height: 230px;
+  height: 220px;
   margin-bottom: 20px;
   background-color: white;
   padding: 10px 10px;
@@ -466,6 +513,55 @@ a {
     font-family: Work Sans;
   }
 
+
+/* Popup */
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;  
+  z-index: 4;
+}
+
+.popup-card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 10px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  transition: 0.2s ease-in-out;
+}
+
+.popup-card img {
+  width: 100%;
+}
+
+.popup-card button {
+  cursor: pointer;
+  display: flex;
+  margin-top: 8%;
+  align-items: center;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 10px;
+  transition: .3s ease-in-out;
+}
+
+/* Popup */
+
+
   .header {
     padding: 20px 0px;
     flex-direction: column;
@@ -501,23 +597,31 @@ a {
   .greeting {
     display: flex;
     justify-content: center;
-    align-items: center;
-    align-items: end;
     gap: 8px;
   }
 
+  .greeting div {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+
   .greeting-hi {
-    width: 110px;
+    width: 30%;
   }
 
   .greeting-name {
-    width: 220px;
+    width: 60%;
     transition: 0.5s ease-in-out;
   }
 
   .left p {
-    font-size: 16px;
+    font-size: 96%;
     text-align: center;
+  }
+
+  .cta {
+    padding: 0% 5%;
   }
 
   .hero .right {
@@ -542,8 +646,8 @@ a {
   .resume {
     margin-top: 30%;
     flex-direction: column;
+    padding: 0px 20px;
     align-items: center;
-    padding: 0px 40px;
   }
 
   .about {
@@ -572,7 +676,7 @@ a {
   }
 
   .education-card {
-    width: 90%;
+    width: 85%;
   }
 
   .education-left {
@@ -580,7 +684,7 @@ a {
   }
   
   .education-right {
-    align-items: start;
+    align-items: end;
     width: 80%;
   }
 
@@ -594,7 +698,8 @@ a {
   }
 
   .exp-right {
-    align-items: start;
+    align-items: end;
+    justify-content: end;
     width: 80%;
   }
   

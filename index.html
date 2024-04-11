@@ -9,9 +9,24 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <!-- Splash -->
     <div class="splash" id="splash">
       <img src="img/logo-inverse.svg" alt="" />
     </div>
+    <!-- Splash -->
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-card">
+        <img src="" alt="certificate" id="certificate">
+        <button onclick="showCertificate()">
+          <span>Close</span>
+          <span>X</span>
+        </button>
+      </div>
+    </div>
+    <!-- Popup -->
 
     <!-- Header -->
     <div class="header">
@@ -165,7 +180,7 @@
               <br />2023
             </p>
           </div>
-          <button>
+          <button onclick="showCertificate('certificates/lksn.jpeg')">
             <span>View Certificate</span>
             <span>&#8594;</span>
           </button>
@@ -175,7 +190,7 @@
             <h3>IT Support Internship</h3>
             <p>Vocational High School Internship Program at PT Satria Bahana Sarana<br>2022-2023</p>
           </div>
-          <button>
+          <button onclick="showCertificate('certificates/intern.jpeg')">
             <span>View Certificate</span>
             <span>&#8594;</span>
           </button>
@@ -188,7 +203,7 @@
               <br />2023
             </p>
           </div>
-          <button>
+          <button onclick="showCertificate('certificates/lksp.jpeg')">
             <span>View Certificate</span>
             <span>&#8594;</span>
           </button>
@@ -201,7 +216,7 @@
               <br />2022
             </p>
           </div>
-          <button>
+          <button onclick="showCertificate('certificates/lksk.jpeg')">
             <span>View Certificate</span>
             <span>&#8594;</span>
           </button>
