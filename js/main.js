@@ -1,12 +1,12 @@
 const splash = document.getElementById("splash")
 
-if (!window.sessionStorage.getItem("isExecuted")) {
-    splash.style.visibility = "visible"
-    setTimeout(() => {
-        splash.style.visibility = "hidden"
-    }, 3000)
-    window.sessionStorage.setItem("isExecuted", true);
-}
+// if (!window.sessionStorage.getItem("isExecuted")) {
+//     splash.style.visibility = "visible"
+//     setTimeout(() => {
+//         splash.style.visibility = "hidden"
+//     }, 3000)
+//     window.sessionStorage.setItem("isExecuted", true);
+// }
 
 
 const greeting = document.getElementById("greeting")
