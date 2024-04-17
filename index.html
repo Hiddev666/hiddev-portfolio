@@ -2,14 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"  />
     <title>Hiddev Portfolio</title>
 
     <link rel="icon" href="img/logo.svg" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-
     <!-- Splash -->
     <div class="splash" id="splash">
       <img src="img/logo-inverse.svg" alt="" />
@@ -19,7 +21,7 @@
     <!-- Popup -->
     <div class="popup" id="popup">
       <div class="popup-card">
-        <img src="" alt="certificate" id="certificate">
+        <img src="" alt="certificate" id="certificate" />
         <button onclick="showCertificate()">
           <span>Close</span>
           <span>X</span>
@@ -30,13 +32,13 @@
 
     <!-- Header -->
     <div class="header">
-      <img src="img/logo.svg" alt="hiddev logo" />
+      <img src="img/logo.svg" alt="hiddev logo" data-aos="flip-up" data-aos-delay="300" />
       <div>
         <a href="#about">
-          <p>About</p>
+          <p data-aos="zoom-in-left" data-aos-delay="300">About</p>
         </a>
-        <p>Projects</p>
-        <p>Contact</p>
+        <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
+        <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
       </div>
     </div>
     <!-- Header -->
@@ -44,7 +46,7 @@
     <!-- Hero -->
     <div class="hero">
       <div class="left">
-        <div class="greeting">
+        <div class="greeting" data-aos="flip-up">
           <div>
             <img src="img/greeting.svg" alt="greeting" class="greeting-hi" />
             <img
@@ -55,23 +57,23 @@
             />
           </div>
         </div>
-        <p>&#9874; as UI/UX Designer & Web Developer</p>
+        <p data-aos="flip-up" data-aos-delay="300">&#9874; as UI/UX Designer & Web Developer</p>
         <div class="cta">
-          <button>See My Projects &#8594;</button>
+          <button data-aos="flip-up" data-aos-delay="400" data-aos-offset="0">See My Projects &#8594;</button>
           <div>
             <a href="https://instagram.com/hiddev__">
-              <img src="img/instagram.svg" alt="" />
+              <img src="img/instagram.svg" alt="" data-aos="flip-up" data-aos-delay="500" data-aos-offset="0"/>
             </a>
             <a href="www.linkedin.com/in/wahid-abdul-aziz-69b749274">
-              <img src="img/linkedin.svg" alt="" />
+              <img src="img/linkedin.svg" alt="" data-aos="flip-up" data-aos-delay="550" data-aos-offset="0" />
             </a>
             <a href="https://github.com/Hiddev666">
-              <img src="img/github.svg" alt="" />
+              <img src="img/github.svg" alt="" data-aos="flip-up" data-aos-delay="600" data-aos-offset="0"/>
             </a>
           </div>
         </div>
       </div>
-      <div class="right">
+      <div class="right" data-aos="flip-down" data-aos-duration="800">
         <img src="img/hero-front.svg" alt="" class="hero-front" />
         <img src="img/hero-back.svg" alt="" class="hero-back" />
       </div>
@@ -79,164 +81,135 @@
     <!-- Hero -->
 
     <!-- About -->
-    <div class="resume">
-      <div class="about" id="about">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-header-left">
-              <img src="img/pp.svg" alt="pp" />
-              <div>
-                <h2>Wahid</h2>
-                <p>@hiddev</p>
-              </div>
+    <div class="about" id="about">
+  <div class="card" >
+        <div class="card-header">
+          <div class="card-header-left">
+            <img src="img/pp.svg" alt="pp" data-aos="zoom-in-right"/>
+            <div data-aos="zoom-in-right" data-aos-delay="200">
+              <h2>Wahid</h2>
+              <p>@hiddev</p>
             </div>
-            <h4>About</h4>
           </div>
+          <h4 data-aos="zoom-in-left" data-aos-delay="300">About</h4>
+        </div>
 
-          <p class="about-text">
-            Hi all! My name is Wahid Abdul Aziz aka Hiddev. I am 16 years old,
-            and I live in the province of South Sumatra, Indonesia 🇮🇩. I am a
-            person who has an interest in the world of graphic design and
-            programming. In the world of graphic design I focus more on the
-            field of UI/UX Design, while in the world of programming I focus on
-            the field of web development
-          </p>
+        <p class="about-text" data-aos="flip-up">
+          Hi all! My name is Wahid Abdul Aziz aka Hiddev. I am 16 years old, and
+          I live in the province of South Sumatra, Indonesia 🇮🇩. I am a person
+          who has an interest in the world of graphic design and programming. In
+          the world of graphic design I focus more on the field of UI/UX Design,
+          while in the world of programming I focus on the field of web
+          development
+        </p>
 
-          <div class="card-footer">
-            <div>
-              <img src="img/love.svg" alt="" />
-              <img src="img/comment.svg" alt="" />
-            </div>
-            <img src="img/share.svg" alt="" />
+        <div class="card-footer">
+          <div>
+            <img src="img/love.svg" alt="" data-aos="flip-up" data-aos-delay="200" />
+            <img src="img/comment.svg" alt="" data-aos="flip-up" data-aos-delay="250"/>
           </div>
+          <img src="img/share.svg" alt="" data-aos="flip-up" data-aos-delay="300"/>
         </div>
       </div>
-      <!-- About -->
+    </div>
+    <!-- About -->
 
+    <!-- Resume -->
+    <div class="resume">
       <!-- Educations -->
-
       <div class="educations" id="educations">
-        <div class="education-left">
-          <div>
-            <p>👨‍🎓</p>
-          </div>
-        </div>
         <div class="education-right">
-          <div class="education-card">
+          <p class="education-title" data-aos="fade-right">Educations.</p>
+          <div class="education-card" data-aos="zoom-in-right">
             <div>
-              <h3>My Educations</h3>
-              <h2>&#10022;</h2>
+              <h3 data-aos="flip-up" data-aos-delay="100">SMK Negeri 1 Muara Enim</h3>
             </div>
-          </div>
-          <div class="education-card">
-            <div>
-              <h3>SMK Negeri 1 Muara Enim</h3>
-            </div>
-            <p>
+            <p data-aos="flip-up" data-aos-delay="200">
               Software Engineering Vocational High School <br />
               2021-2024
             </p>
           </div>
-          <div class="education-card">
+          <div class="education-card" data-aos="zoom-in-right">
             <div>
-              <h3>MTS Negeri 1 Muara Enim</h3>
+              <h3 data-aos="flip-up" data-aos-delay="100">MTS Negeri 1 Muara Enim</h3>
             </div>
-            <p>
+            <p data-aos="flip-up" data-aos-delay="200">
               Islamic Junior High School <br />
               2018-2021
             </p>
           </div>
-          <div class="education-card">
+          <div class="education-card" data-aos="zoom-in-right">
             <div>
-              <h3>MI YPITR Tanjung Raja</h3>
+              <h3 data-aos="flip-up" data-aos-delay="100">MI YPITR Tanjung Raja</h3>
             </div>
-            <p>
+            <p data-aos="flip-up" data-aos-delay="200">
               Islamic Elementary School<br />
               2013-2018
             </p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Educations -->
-    <div class="exp" id="exp">
-      <div class="exp-left">
-        <div>
-          <p>🌟</p>
-        </div>
-      </div>
-      <div class="exp-right">
-        <!-- <div class="exp-card">
-          <div>
-            <h3>My Experiences & Achivements</h3>
-            <h2>&#10022;</h2>
-          </div>
-        </div> -->
-        <div class="exp-card">
-          <div>
-            <h3>Finalis IT Software Solutions for Business</h3>
-            <p>
-              Lomba Kompetensi Siswa (LKS) SMK Tingkat Nasional
-              <br />2023
+
+      <!-- Experiences & Achivements -->
+      <div class="educations" id="educations">
+        <div class="education-right">
+          <p class="education-title" data-aos="fade-right">Experiences & Achivements.</p>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">Finalis IT Software Solutions for Business</h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Lomba Kompetensi Siswa (LKS) SMK Tingkat Nasional <br />
+              2023
             </p>
           </div>
-          <button onclick="showCertificate('certificates/lksn.jpeg')">
-            <span>View Certificate</span>
-            <span>&#8594;</span>
-          </button>
-        </div>
-        <div class="exp-card">
-          <div>
-            <h3>IT Support Internship</h3>
-            <p>Vocational High School Internship Program at PT Satria Bahana Sarana<br>2022-2023</p>
-          </div>
-          <button onclick="showCertificate('certificates/intern.jpeg')">
-            <span>View Certificate</span>
-            <span>&#8594;</span>
-          </button>
-        </div>
-        <div class="exp-card">
-          <div>
-            <h3>#1 IT Software Solutions for Business</h3>
-            <p>
-              Lomba Kompetensi Siswa (LKS) SMK Tingkat Provinsi Sumatera Selatan
-              <br />2023
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">1st Winner IT Software Solutions for Business</h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Lomba Kompetensi Siswa (LKS) SMK Tingkat Provinsi SUMSEL <br />
+              2023
             </p>
           </div>
-          <button onclick="showCertificate('certificates/lksp.jpeg')">
-            <span>View Certificate</span>
-            <span>&#8594;</span>
-          </button>
-        </div>
-        <div class="exp-card">
-          <div>
-            <h3>#1 IT Software Solutions for Business</h3>
-            <p>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">IT Support Internship</h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Vocational High School Internship Program at PT Satria Bahana
+              Sarana<br />
+              2022-2023
+            </p>
+          </div>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">Leader of Student Council</h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              OSIS SMK Negeri 1 Muara Enim<br />
+              2022-2023
+            </p>
+          </div>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">1st Winner IT Software Solutions for Business</h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
               Lomba Kompetensi Siswa (LKS) SMK Tingkat Kabupaten Muara Enim
-              <br />2022
+              <br />
+              2022
             </p>
           </div>
-          <button onclick="showCertificate('certificates/lksk.jpeg')">
-            <span>View Certificate</span>
-            <span>&#8594;</span>
-          </button>
-        </div>
-        <div class="exp-card">
-          <div>
-            <h3>Leader of Students Council</h3>
-            <p>
-              OSIS SMK Negeri 1 Muara Enim
-              <br />2022-2023
-            </p>
-          </div>
-          <button>
-            <span>View Certificate</span>
-            <span>&#8594;</span>
-          </button>
         </div>
       </div>
     </div>
+    <!-- Resume -->
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
