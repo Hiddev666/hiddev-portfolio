@@ -354,67 +354,56 @@ a {
 /* Educations */
 
 
-/* EXP */
-.exp {
-  width: 50%;
-  padding: 0px 50px;
-}
-
-.exp-right {
-  width: 100%;
+/* Skills */
+.skill {
+  margin-top: 4%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
-  gap: 1.5%;
+  padding: 0px 70px;
+  gap: 20px;
 }
 
-.exp-card {
+.skill-row {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
-  background-color: white;
-  padding: 10px 10px;
-  border: 2px solid #545454;
-  border-radius: 8px;
-  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
-  transition: 0.2s ease-in-out;
+  row-gap: 30px;
 }
 
-.exp-card:hover {
-  box-shadow: 10px 10px 0px -2px rgba(137, 181, 175, 1),
-    10px 10px 0px 0px rgba(84, 84, 84, 1);
-}
-
-.exp-card div {
-}
-
-.exp-card button {
-  cursor: pointer;
+.skill-card {
   display: flex;
   align-items: center;
-  font-weight: 500;
-  justify-content: space-between;
-  width: 100%;
-  border: 1px solid #545454;
-  border-radius: 8px;
-  background-color: transparent;
+  width: 22%;
+  background-color: white;
   padding: 10px;
-  transition: .3s ease-in-out;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  gap: 10px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
 }
 
-.exp-card button:hover {
-  background-color: #eaeaea;
+.skill-card img {
+  border-radius: 6px;
+  border: 2px solid #545454;
+  padding: 5px;
+  width: 30px;
 }
 
-.exp-card h2 {
-  animation: educations 2s ease 0s infinite normal forwards;
+.skill-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
 }
 
-.exp-card p {
-  margin-top: 5px;
+.skill-card p {
+  font-size: 20px;
+  font-weight: 600;
 }
+/* Skills */
 
 @keyframes myAnim {
   0%,
@@ -679,5 +668,57 @@ a {
     width: 85%;
     height: 190px;
   }
+
+
+/* Skills */
+.skill {
+  margin-top: 20%;
+  margin-bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  gap: 20px;
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.skill-card img {
+  border-radius: 6px;
+  border: 2px solid #545454;
+  padding: 5px;
+  width: 30px;
+}
+
+.skill-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.skill-card p {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+/* Skills */
+
 
 }
