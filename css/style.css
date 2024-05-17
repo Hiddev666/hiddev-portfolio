@@ -357,7 +357,7 @@ a {
 /* Skills */
 .skill {
   margin-top: 4%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   display: flex;
   flex-direction: column;
   padding: 0px 70px;
@@ -404,6 +404,16 @@ a {
   font-weight: 600;
 }
 /* Skills */
+
+/* Projects */
+.projects {
+  margin-top: 2%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 70px;
+  gap: 20px;
+}
 
 @keyframes myAnim {
   0%,
@@ -714,7 +724,7 @@ a {
 }
 
 .skill-card p {
-  font-size: 15px;
+  font-size: 13px;
   text-align: center;
   font-weight: 600;
 }
