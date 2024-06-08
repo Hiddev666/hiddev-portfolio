@@ -35,6 +35,13 @@ function change(index) {
     greeting.src = greetings[index]["img"]
 }
 
+const skill = document.getElementById("skill-row");
+setInterval(() => {
+    skill.style.flexDirection = "row-reverse";
+    setTimeout(() => {
+        skill.style.flexDirection = "row";
+    }, 5000)
+}, 10000)
 
 const popup = document.getElementById("popup")
 const certificate = document.getElementById("certificate")

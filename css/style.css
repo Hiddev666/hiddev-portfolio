@@ -364,9 +364,10 @@ a {
   gap: 20px;
 }
 
-.skill-row {
+  .skill-row {
   display: flex;
   flex-wrap: wrap;
+  transition: .3s ease-in-out;
   justify-content: space-between;
   row-gap: 30px;
 }
@@ -412,8 +413,66 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0px 70px;
-  gap: 20px;
+  gap: 30px;
 }
+
+.projects-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  height: auto;
+  background-color: white;
+  padding: 15px;
+  padding-bottom: 20px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 0px 13px 0px -2px rgba(137, 181, 175, 1),
+    0px 13px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.project-card img {
+  margin-top: 2%;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  box-shadow: 0px -6px 0px -2px rgba(84, 84, 84, 1),
+  0px -6px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.project-card h2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 15px;
+}
+
+.project-card button {
+  font-weight: 600;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+  padding: 15px;
+  border: 1.5px solid #545454;
+  border-radius: 8px;
+  margin-top: 8%;
+}
+
+.project-card button:hover {
+  background-color: #88b4af;
+  color: white;
+}
+
+/* Projects */
+
 
 @keyframes myAnim {
   0%,
@@ -730,5 +789,59 @@ a {
 }
 /* Skills */
 
+.projects {
+  margin-top: 20%;
+  margin-bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  gap: 20px;
+}
+
+.projects-row {
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  padding: 15px;
+  padding-bottom: 20px;
+  border: 2px solid #545454;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.project-card img {
+  margin-top: 2%;
+  width: 100%;
+  border: 1px solid #545454;
+  border-radius: 5px;
+  box-shadow: 0px -6px 0px -2px rgba(84, 84, 84, 1),
+  0px -6px 0px 0px rgba(84, 84, 84, 1);
+}
+
+.project-card h2 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.project-card button {
+  font-weight: 600;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  border: 1.5px solid #545454;
+  border-radius: 5px;
+  margin-top: 8%;
+}
 
 }

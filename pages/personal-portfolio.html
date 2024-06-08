@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Wahid Abdul Aziz | Portfolio</title>
+
+    <link rel="icon" href="../img/logo.svg" />
+    <link rel="stylesheet" href="../css/detail.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <a href="../index.html">
+        <img
+          src="../img/logo.svg"
+          alt="hiddev logo"
+          data-aos="flip-up"
+          data-aos-delay="300"
+        />
+      </a>
+      <div>
+        <a href="#about">
+          <p data-aos="zoom-in-left" data-aos-delay="300">About</p>
+        </a>
+        <a href="#skill">
+          <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
+        </a>
+        <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
+      </div>
+    </div>
+
+    <!-- Detail -->
+    <div class="detail">
+      <div class="left">
+        <div class="items">
+          <img src="" alt="" id="project-image" />
+          <div class="items-buttons">
+            <button id="btn-items-up" class="btn-items-up">&#10148;</button>
+            <p id="items-position">1 of 2</p>
+            <button id="btn-items-down" class="btn-items-down">&#10148;</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="detail-card">
+          <div class="detail-id">
+            <p class="detail-title" id="detail-name"></p>
+            <button id="btn-view">View Project &#10148;</button>
+          </div>
+          <div class="detail-desc">
+            <p>Description</p>
+            <p id="detail-description"></p>
+          </div>
+          <div class="detail-tech-stack">
+            <p>Tech Stack</p>
+            <div class="tech-stack" id="detail-stack">
+              <!-- <img src="../img/skills/html.svg">
+                    <img src="../img/skills/css.png">
+                    <img src="../img/skills/js.png"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Detail -->
+
+    <!-- Header -->
+    <script src="../js/carousel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
