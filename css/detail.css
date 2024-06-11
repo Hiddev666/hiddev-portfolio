@@ -71,6 +71,7 @@ a {
   background-color: white;
   padding: 40px 20px;
   padding-bottom: 20px;
+  padding-top: 30px;
   border: 2px solid #545454;
   border-radius: 8px;
   gap: 30px;
@@ -81,10 +82,11 @@ a {
 .detail-id {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .detail-title {
-  font-size: 35px;
+  font-size: 30px;
   width: 50%;
   font-weight: 600;
   line-height: 30px;
@@ -108,6 +110,7 @@ a {
   gap: 7px;
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 .detail-desc p:nth-child(2) {
@@ -363,7 +366,7 @@ a {
   }
 
   .detail-title {
-    font-size: 35px;
+    font-size: 30px;
     width: 50%;
     font-weight: 600;
     line-height: 30px;

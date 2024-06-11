@@ -12,7 +12,7 @@ const itemsPosition = document.getElementById("items-position");
 
 const images = [
   {
-    name: "BDP MART",
+    name: "BDP MART.",
     images: [
       "../img/projects/bdp-mart/img1.svg",
       "../img/projects/bdp-mart/img2.svg",
@@ -32,7 +32,7 @@ const images = [
     url: "https://github.com/Hiddev666/bdpmart/",
   },
   {
-    name: "Personal Portfolio",
+    name: "Personal Portfolio.",
     images: [
       "../img/projects/personal-portfolio/img1.svg",
       "../img/projects/personal-portfolio/img2.svg",
@@ -46,6 +46,26 @@ const images = [
       "../img/skills/js.png",
     ],
     url: "https://github.com/Hiddev666/hiddev-portfolio",
+  },
+  {
+    name: "DigitaLibrary.",
+    images: [
+      "../img/projects/digitalibrary/img.svg",
+      "../img/projects/digitalibrary/img (1).svg",
+      "../img/projects/digitalibrary/img (2).svg",
+      "../img/projects/digitalibrary/img (3).svg",
+      "../img/projects/digitalibrary/img (4).svg",
+      "../img/projects/digitalibrary/img (5).svg",
+    ],
+    description:
+      "A web application with MVC architecture to assist the library lending and borrowing process. This app has many features like authentication, multi role access, book management, loan management etc. This application was created when I took a skills competency test at my school.",
+    stack: [
+      "../img/skills/html.svg",
+      "../img/skills/bootstrap.png",
+      "../img/skills/php-logo.svg",
+      "../img/skills/mysql8604.logowik.com.webp",
+    ],
+    url: "https://github.com/Hiddev666/digitalibrary",
   },
 ];
 
@@ -88,9 +108,9 @@ btnDown.addEventListener("click", () => {
   console.log(index.images[position]);
   itemsPosition.innerHTML = `${position + 1} of ${projectSelected.images.length}`
   projectImage.src = index.images[position];
-  if (position === index.images.length - 1) {
-    position = 0;
+  if (position === 0) {
+    position = index.images.length - 1;
   } else {
-    position++;
+    position--;
   }
 });
