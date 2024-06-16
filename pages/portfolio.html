@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Wahid Abdul Aziz | Portfolio</title>
+
+    <link rel="icon" href="../../../img/logo.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/loading.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="loader-full" id="loader">
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+        </div>
+    </div>
+
+      <!-- Header -->
+      <div class="header">
+        <a href="../index.html">
+          <img
+            src="../../img/logo.svg"
+            alt="hiddev logo"
+            data-aos="flip-up"
+            data-aos-delay="300"
+          />
+        </a>
+        <div class="header-menu">
+          <a href="../index.html">
+            <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
+          </a>
+          <a href="about.html">
+            <p data-aos="zoom-in-left" data-aos-delay="300">About</p>
+          </a>
+          <a href="portfolio.html">
+            <p data-aos="zoom-in" data-aos-delay="350" class="menu-active">Portfolio</p>
+          </a>
+          <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
+        </div>
+        <div class="hamburger">
+          <img
+            src="../../img/hamburger-menu-svgrepo-com.svg"
+            class="btn-hamburger"
+            id="btn-hamburger"
+            alt=""
+          />
+          <div class="list-hamburger" id="list-hamburger" data-aos="flip-down" data-aos-duration="800">
+            <a href="../index.html">
+              <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
+            </a>
+            <a href="about.html">
+              <p data-aos="zoom-in-left" data-aos-delay="300">About</p>
+            </a>
+            <a href="portfolio.html">
+              <p data-aos="zoom-in" data-aos-delay="350" class="menu-active">Portfolio</p>
+            </a>
+            <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
+          </div>
+        </div>
+      </div>
+      <!-- Header -->
+
+
+    <!-- Portfolio -->
+    <div class="projects" class="projects" id="content">
+      <p class="education-title" data-aos="fade-right">Projects.</p>
+
+      <div class="projects-row">
+        <div class="project-card">
+          <img src="../img/projects/bdpmart.svg" alt="project" />
+          <div>
+            <h2>BDP MART.</h2>
+            <p>
+              A web based cashier app for bussiness and marketing field at my
+              school.
+            </p>
+            <a href="pages/personal-portfolio.html?project=0">
+              <button>Details</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="../img/projects/portfolio.svg" alt="project" />
+          <div>
+            <h2>Personal Portfolio.</h2>
+            <p>My personal website for show my works and who am i.</p>
+            <a href="pages/personal-portfolio.html?project=1">
+              <button>Details</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="../img/projects/digitalibrary.svg" alt="project" />
+          <div>
+            <h2>DigitaLibrary.</h2>
+            <p>A web app that support library system & make it easier.</p>
+            <a href="pages/personal-portfolio.html?project=2">
+              <button>Details</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="../img/projects/digitalibrary.svg" alt="project" />
+          <div>
+            <h2>DigitaLibrary.</h2>
+            <p>A web app that support library system & make it easier.</p>
+            <a href="pages/personal-portfolio.html?project=2">
+              <button>Details</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
