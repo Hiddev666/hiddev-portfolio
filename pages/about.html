@@ -15,7 +15,7 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="body">
     <div class="loader-full" id="loader">
       <div class="loader-wrapper">
         <div class="loader"></div>
@@ -33,13 +33,13 @@
           />
         </a>
         <div class="header-menu">
-          <a href="../index.html">
+          <a onclick="beforeMovePage('../index.html')">
             <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
           </a>
-          <a href="about.html">
+          <a onclick="beforeMovePage('about.html')">
             <p data-aos="zoom-in-left" data-aos-delay="300" class="menu-active">About</p>
           </a>
-          <a href="portfolio.html">
+          <a onclick="beforeMovePage('portfolio.html')">
             <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
           </a>
           <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
@@ -52,13 +52,13 @@
             alt=""
           />
           <div class="list-hamburger" id="list-hamburger" data-aos="flip-down" data-aos-duration="800">
-            <a href="../index.html">
+            <a onclick="beforeMovePage('../index.html')">
               <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
             </a>
-            <a href="about.html">
+            <a onclick="beforeMovePage('about.html')">
               <p data-aos="zoom-in-left" data-aos-delay="300" class="menu-active">About</p>
             </a>
-            <a href="portfolio.html">
+            <a onclick="beforeMovePage('portfolio.html')">
               <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
             </a>
             <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>

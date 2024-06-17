@@ -8,12 +8,15 @@ const splash = document.getElementById("splash");
 //     window.sessionStorage.setItem("isExecuted", true);
 // }
 
+const body = document.getElementById("body");
 const greeting = document.getElementById("greeting");
 const btnHamburger = document.getElementById("btn-hamburger");
 const listHamburger = document.getElementById("list-hamburger");
 const loader = document.getElementById("loader");
 const showContent = document.getElementById("content");
+const btnMenuHref = document.getElementById("btn-menu-href");
 listHamburger.style.display = "none";
+
 
 setTimeout(() => {
   loader.style.animation = "1s fadeIn";
@@ -21,6 +24,13 @@ setTimeout(() => {
     loader.style.visibility = "hidden";
   }, 1000);
 }, 2000);
+
+const beforeMovePage = (href) => {
+  loader.style.animation = "1.2s fadeOut forwards"
+  setTimeout(() => {
+    window.location = href
+  }, 1200)
+}
 
 btnHamburger.addEventListener("click", () => {
   btnHamburger.style.content = `url("../img/cross-small-svgrepo-com.svg")`;
@@ -65,6 +75,10 @@ setInterval(() => {
 
 function change(index) {
   greeting.src = greetings[index]["img"];
+  greeting.style.animation = "2s greeting"
+  setTimeout(() => {
+    greeting.style.animation = "none"
+  }, 2000)
 }
 
 const skill = document.getElementById("skill-row");

@@ -1,6 +1,3 @@
-/* HTML: <div class="loader"></div> */
-/* HTML: <div class="loader"></div> */
-/* HTML: <div class="loader"></div> */
 
 .loader-full {
     background-color: #88b4af;
@@ -20,6 +17,9 @@
     background-color: white;
     padding: 20px;
     border-radius: 8px;
+    border: 2px solid #505050;
+    box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
+    0px 10px 0px 0px rgba(84, 84, 84, 1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +39,23 @@
     100% {
         visibility: visible;
         top: 100%;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+        visibility: visible;
+        top: 100%;
+    }
+
+    50% {
+        visibility: visible;
+        top: 50%;
+    }
+
+    100% {
+        visibility: visible;
+        top: 0%;
     }
   }
 
@@ -81,7 +98,7 @@
         linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;
             mask-composite:exclude;
-    animation: l6 2s forwards ;
+    animation: l6 2s forwards;
   }
   .loader:after {
     content: "";
@@ -101,17 +118,23 @@
    100%    {-webkit-mask-size: 17px 17px,17px 17px,17px 17px,17px 17px,17px 17px,17px 17px,auto}
   }
 
-  /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
 .loader-text {
-    width: fit-content;
-    font-size: 30px;
-    color:#0000;
-    background:linear-gradient(90deg,#000 calc(50% - 0.5ch),#C02942 0 calc(50% + 0.5ch),#000 0) right/calc(200% + 1ch) 100%;
-    -webkit-background-clip:text;
-            background-clip:text;
-    animation: l8 2s infinite steps(11);
-  }
-  .loader-text:before {
-    content:"Wait Bro..."
-  }
-  @keyframes l8 {to{background-position: left}}
+  font-size: 20px;
+  display: inline-grid;
+}
+.loader-text:before,
+.loader-text:after {
+  grid-area: 1/1;
+  -webkit-mask:linear-gradient(90deg,#000 50%,#0000 0) 0 50%/2ch 100%;
+  animation: l11 1s infinite cubic-bezier(0.5,220,0.5,-220);
+}
+.loader-text:after {
+  -webkit-mask-position:1ch 50%;
+  --s:-1;
+}
+@keyframes l11 {100%{transform: translateY(calc(var(--s,1)*0.1%));}}
+
+.loader-img {
+  width: 30%;
+}

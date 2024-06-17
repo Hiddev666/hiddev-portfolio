@@ -10,6 +10,7 @@ const projectStack = document.getElementById("detail-stack");
 const btnView = document.getElementById("btn-view");
 const itemsPosition = document.getElementById("items-position");
 
+
 const images = [
   {
     name: "BDP MART.",
