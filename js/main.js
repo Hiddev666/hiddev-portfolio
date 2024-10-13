@@ -41,7 +41,7 @@ btnHamburger.addEventListener("click", () => {
       listHamburger.style.animation = ".5s hamburgerGap";
     }, 1000);
   } else {
-    btnHamburger.style.content = `url("../img/hamburger-menu-svgrepo-com.svg")`;
+    btnHamburger.style.content = `url("../img/hamburger-black.svg")`;
     console.log("hide");
     listHamburger.style.animation = ".5s hamburgerHideGap";
     setTimeout(() => {
@@ -55,10 +55,10 @@ btnHamburger.addEventListener("click", () => {
 
 let greetings = [
   {
-    img: "img/greeting-hiddev.svg",
+    img: "img/greeting-hiddev-black.svg",
   },
   {
-    img: "img/greeting-wahid.svg",
+    img: "img/greeting-wahid-black.svg",
   },
 ];
 

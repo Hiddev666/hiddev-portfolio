@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: Work Sans;
-  color: #545454;
+  color: #222222;
   scroll-behavior: smooth;
 }
 
@@ -60,10 +60,10 @@ a {
   align-items: center;
   background-color: white;
   padding: 10px 10px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   border-radius: 8px;
-  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+    0px 10px 0px 0px rgba(34, 34, 34, 100);
   transition: 0.2s ease-in-out;
 }
 
@@ -79,7 +79,7 @@ a {
   font-weight: 500;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid #545454;
+  border: 1px solid #222222;
   border-radius: 8px;
   background-color: transparent;
   padding: 10px;
@@ -207,21 +207,21 @@ a {
   cursor: pointer;
   background-color: white;
   padding: 12px 20px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   border-radius: 5px;
-  box-shadow: 7px 7px 0px -2px rgba(137, 181, 175, 1),
-    7px 7px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 7px 7px 0px -2px rgba(41, 41, 41, 100),
+    7px 7px 0px 0px rgba(34, 34, 34, 100);
   transition: 0.2s ease-in-out;
 }
 
 .cta button:hover {
-  box-shadow: 10px 10px 0px -2px rgba(137, 181, 175, 1),
-    10px 10px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 10px 10px 0px -2px rgba(41, 41, 41, 100),
+    10px 10px 0px 0px rgba(34, 34, 34, 100);
 }
 
 .cta button:active {
-  box-shadow: 3px 3px 0px -2px rgba(137, 181, 175, 1),
-    3px 3px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 3px 3px 0px -2px rgba(41, 41, 41, 100),
+    3px 3px 0px 0px rgba(34, 34, 34, 100);
 }
 
 .cta div {
@@ -278,10 +278,10 @@ a {
   width: 100%;
   background-color: white;
   padding: 40px 40px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   border-radius: 8px;
-  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+    0px 10px 0px 0px rgba(34, 34, 34, 100);
   transition: 0.2s ease-in-out;
 }
 
@@ -294,7 +294,7 @@ a {
 .card-header img {
   width: 50px;
   border-radius: 100%;
-  border: 1px solid #545454;
+  border: 1px solid #222222;
 }
 
 .card-header-left {
@@ -350,16 +350,16 @@ a {
   width: 97%;
   background-color: white;
   padding: 10px 10px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   border-radius: 8px;
-  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+    0px 10px 0px 0px rgba(34, 34, 34, 100);
   transition: 0.2s ease-in-out;
 }
 
 .education-card:hover {
-  box-shadow: 10px 10px 0px -2px rgba(137, 181, 175, 1),
-    10px 10px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 10px 10px 0px -2px rgba(41, 41, 41, 100),
+    10px 10px 0px 0px rgba(34, 34, 34, 100);
 }
 
 .education-card div {
@@ -378,7 +378,7 @@ a {
   font-weight: 500;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid #545454;
+  border: 1px solid #222222;
   border-radius: 8px;
   background-color: transparent;
   padding: 10px;
@@ -430,16 +430,16 @@ a {
   width: 22%;
   background-color: white;
   padding: 10px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   border-radius: 8px;
   gap: 10px;
-  box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+    0px 10px 0px 0px rgba(34, 34, 34, 100);
 }
 
 .skill-card img {
   border-radius: 6px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   padding: 5px;
   width: 30px;
 }
@@ -482,20 +482,20 @@ a {
   background-color: white;
   padding: 15px;
   padding-bottom: 20px;
-  border: 2px solid #545454;
+  border: 2px solid #222222;
   border-radius: 8px;
   gap: 30px;
-  box-shadow: 0px 13px 0px -2px rgba(137, 181, 175, 1),
-    0px 13px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 0px 13px 0px -2px rgba(41, 41, 41, 100),
+    0px 13px 0px 0px rgba(34, 34, 34, 100);
 }
 
 .project-card img {
   margin-top: 2%;
   width: 100%;
-  border: 1px solid #545454;
+  border: 1px solid #222222;
   border-radius: 5px;
-  box-shadow: 0px -6px 0px -2px rgba(84, 84, 84, 1),
-    0px -6px 0px 0px rgba(84, 84, 84, 1);
+  box-shadow: 0px -6px 0px -2px rgba(34, 34, 34, 100),
+    0px -6px 0px 0px rgba(34, 34, 34, 100);
 }
 
 .project-card h2 {
@@ -513,7 +513,7 @@ a {
   background-color: white;
   cursor: pointer;
   padding: 15px;
-  border: 1.5px solid #545454;
+  border: 1.5px solid #222222;
   border-radius: 8px;
   margin-top: 8%;
 }
@@ -597,8 +597,13 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
+  
   html {
     font-family: Work Sans;
+  }
+
+  .header img {
+    width: 45px;
   }
 
   .home {
@@ -624,10 +629,10 @@ a {
     align-items: center;
     background-color: white;
     padding: 10px 10px;
-    border: 2px solid #545454;
+    border: 2px solid #222222;
     border-radius: 8px;
-    box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-      0px 10px 0px 0px rgba(84, 84, 84, 1);
+    box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+      0px 10px 0px 0px rgba(34, 34, 34, 100);
     transition: 0.2s ease-in-out;
   }
 
@@ -643,7 +648,7 @@ a {
     font-weight: 500;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid #545454;
+    border: 1px solid #222222;
     border-radius: 8px;
     background-color: transparent;
     padding: 10px;
@@ -699,8 +704,8 @@ a {
     border: 2px solid #505050;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
+    box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+    0px 10px 0px 0px rgba(34, 34, 34, 100);
   }
   
   @keyframes hamburgerShow {
@@ -915,15 +920,15 @@ a {
     width: 40%;
     background-color: white;
     padding: 10px;
-    border: 2px solid #545454;
+    border: 2px solid #222222;
     border-radius: 8px;
-    box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-      0px 10px 0px 0px rgba(84, 84, 84, 1);
+    box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+      0px 10px 0px 0px rgba(34, 34, 34, 100);
   }
 
   .skill-card img {
     border-radius: 6px;
-    border: 2px solid #545454;
+    border: 2px solid #222222;
     padding: 5px;
     width: 30px;
   }
@@ -965,20 +970,20 @@ a {
     background-color: white;
     padding: 15px;
     padding-bottom: 20px;
-    border: 2px solid #545454;
+    border: 2px solid #222222;
     border-radius: 8px;
     gap: 30px;
-    box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-      0px 10px 0px 0px rgba(84, 84, 84, 1);
+    box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+      0px 10px 0px 0px rgba(34, 34, 34, 100);
   }
 
   .project-card img {
     margin-top: 2%;
     width: 100%;
-    border: 1px solid #545454;
+    border: 1px solid #222222;
     border-radius: 5px;
-    box-shadow: 0px -6px 0px -2px rgba(84, 84, 84, 1),
-      0px -6px 0px 0px rgba(84, 84, 84, 1);
+    box-shadow: 0px -6px 0px -2px rgba(34, 34, 34, 100),
+      0px -6px 0px 0px rgba(34, 34, 34, 100);
   }
 
   .project-card h2 {
@@ -991,7 +996,7 @@ a {
     width: 100%;
     background-color: white;
     padding: 15px;
-    border: 1.5px solid #545454;
+    border: 1.5px solid #222222;
     border-radius: 5px;
     margin-top: 8%;
   }

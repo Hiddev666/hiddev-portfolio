@@ -1,6 +1,6 @@
 
 .loader-full {
-    background-color: #88b4af;
+    background-color: #292929;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     animation-fill-mode: forwards;
-    border: 2px solid #505050;
+    border: 2px solid #222222;
 }
 
 .loader-wrapper {
@@ -18,8 +18,8 @@
     padding: 20px;
     border-radius: 8px;
     border: 2px solid #505050;
-    box-shadow: 0px 10px 0px -2px rgba(137, 181, 175, 1),
-    0px 10px 0px 0px rgba(84, 84, 84, 1);
+    box-shadow: 0px 10px 0px -2px rgba(41, 41, 41, 100),
+    0px 10px 0px 0px rgba(34, 34, 34, 100);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +104,7 @@
     content: "";
     position: absolute;
     inset: 60% 0 0;
-    background: #B21B01;
+    background: #242424;
     border-top: 5px solid #c9c7c5; 
   }
   @keyframes l6 {
