@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,211 +19,282 @@
     <div class="loader-full" id="loader">
       <div class="loader-wrapper">
         <div class="loader"></div>
-        </div>
+      </div>
     </div>
 
-      <!-- Header -->
-      <div class="header">
-        <a href="../index.html">
-          <img
-            src="../img/logo-black.svg"
-            alt="hiddev logo"
-            data-aos="flip-up"
-            data-aos-delay="300"
-          />
+    <!-- Header -->
+    <div class="header">
+      <a href="../index.html">
+        <img
+          src="../img/logo-black.svg"
+          alt="hiddev logo"
+          data-aos="flip-up"
+          data-aos-delay="300"
+        />
+      </a>
+      <div class="header-menu">
+        <a onclick="beforeMovePage('../index.html')">
+          <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
         </a>
-        <div class="header-menu">
+        <a onclick="beforeMovePage('about.html')">
+          <p data-aos="zoom-in-left" data-aos-delay="300" class="menu-active">
+            About
+          </p>
+        </a>
+        <a onclick="beforeMovePage('portfolio.html')">
+          <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
+        </a>
+        <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
+      </div>
+      <div class="hamburger">
+        <img
+          src="../img/hamburger-black.svg"
+          class="btn-hamburger"
+          id="btn-hamburger"
+          alt=""
+        />
+        <div
+          class="list-hamburger"
+          id="list-hamburger"
+          data-aos="flip-down"
+          data-aos-duration="800"
+        >
           <a onclick="beforeMovePage('../index.html')">
             <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
           </a>
           <a onclick="beforeMovePage('about.html')">
-            <p data-aos="zoom-in-left" data-aos-delay="300" class="menu-active">About</p>
+            <p data-aos="zoom-in-left" data-aos-delay="300" class="menu-active">
+              About
+            </p>
           </a>
           <a onclick="beforeMovePage('portfolio.html')">
             <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
           </a>
           <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
         </div>
-        <div class="hamburger">
-          <img
-            src="../img/hamburger-black.svg"
-            class="btn-hamburger"
-            id="btn-hamburger"
-            alt=""
-          />
-          <div class="list-hamburger" id="list-hamburger" data-aos="flip-down" data-aos-duration="800">
-            <a onclick="beforeMovePage('../index.html')">
-              <p data-aos="zoom-in-left" data-aos-delay="300">Home</p>
-            </a>
-            <a onclick="beforeMovePage('about.html')">
-              <p data-aos="zoom-in-left" data-aos-delay="300" class="menu-active">About</p>
-            </a>
-            <a onclick="beforeMovePage('portfolio.html')">
-              <p data-aos="zoom-in" data-aos-delay="350">Portfolio</p>
-            </a>
-            <p data-aos="zoom-in-right" data-aos-delay="400">Contact</p>
-          </div>
-        </div>
       </div>
-      <!-- Header -->
+    </div>
+    <!-- Header -->
 
     <!-- About -->
     <div class="about" id="content">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-header-left">
-              <img src="../img/pp-black.jpg" alt="pp" data-aos="zoom-in-right" />
-              <div data-aos="zoom-in-right" data-aos-delay="200">
-                <h2>Wahid</h2>
-                <p>@hiddev</p>
-              </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-header-left">
+            <img src="../img/pp-black.jpg" alt="pp" data-aos="zoom-in-right" />
+            <div data-aos="zoom-in-right" data-aos-delay="200">
+              <h2>Wahid</h2>
+              <p>@hiddev</p>
             </div>
-            <h4 data-aos="zoom-in-left" data-aos-delay="300">About</h4>
           </div>
-  
-          <p class="about-text" data-aos="flip-up">
-            Hi everybody! My name is Wahid Abdul Aziz, I am 17 years old and I live in the province of South Sumatra, Indonesia. I am a Web Developer & Graphic Designer with various works
-has been produced such as websites, applications, illustrations, logos, posters and works
-other digital and have experience in organizing digital content and marketing to make it more attractive. I hope we can collaborate to create something amazing!
-          </p>
-  
-          <div class="card-footer">
-            <div>
-              <img
-                src="../img/love.svg"
-                alt=""
-                data-aos="flip-up"
-                data-aos-delay="200"
-              />
-              <img
-                src="../img/comment.svg"
-                alt=""
-                data-aos="flip-up"
-                data-aos-delay="250"
-              />
-            </div>
+          <h4 data-aos="zoom-in-left" data-aos-delay="300">About</h4>
+        </div>
+
+        <p class="about-text" data-aos="flip-up">
+          I am a Diploma in Computer Engineering student at Sriwijaya State
+          Polytechnic with a strong passion for software engineering, web
+          technologies, and information systems. I enjoy designing and
+          developing scalable, user-centric applications while continuously
+          exploring modern technologies and industry best practices. My
+          technical expertise includes full-stack web application development,
+          server-side development, mobile application development, and graphic
+          design. I am passionate about building solutions that are not only
+          functional but also maintainable, efficient, and aligned with
+          real-world software engineering standards. Beyond technical skills, I
+          value collaboration, effective communication, and knowledge sharing. I
+          enjoy mentoring and contributing to learning communities, believing
+          that continuous learning and collaboration are essential for personal
+          and professional growth. I am always eager to take on new challenges,
+          expand my expertise, and create meaningful digital solutions that
+          deliver real impact.
+        </p>
+
+        <div class="card-footer">
+          <div>
             <img
-              src="../img/share.svg"
+              src="../img/love.svg"
               alt=""
               data-aos="flip-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
+            />
+            <img
+              src="../img/comment.svg"
+              alt=""
+              data-aos="flip-up"
+              data-aos-delay="250"
             />
           </div>
+          <img
+            src="../img/share.svg"
+            alt=""
+            data-aos="flip-up"
+            data-aos-delay="300"
+          />
         </div>
       </div>
-      <!-- About -->
-  
-      <!-- Resume -->
-      <div class="resume">
-        <!-- Educations -->
-        <div class="educations" id="educations">
-          <div class="education-right">
-            <p class="education-title" data-aos="fade-right">Educations.</p>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  Politeknik Negeri Sriwijaya
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                D3 | Computer Engineering Study Program<br />
-                2024 - Now
-              </p>
+    </div>
+    <!-- About -->
+
+    <!-- Resume -->
+    <div class="resume">
+      <!-- Educations -->
+      <div class="educations" id="educations">
+        <div class="education-right">
+          <p class="education-title" data-aos="fade-right">Educations.</p>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                Politeknik Negeri Sriwijaya
+              </h3>
             </div>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  SMK Negeri 1 Muara Enim
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                SMK | Software Engineering Study Program<br />
-                2021 - 2024
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Experiences & Achivements -->
-        <div class="educations" id="educations">
-          <div class="education-right">
-            <p class="education-title" data-aos="fade-right">
-              Experiences & Achivements.
+            <p data-aos="flip-up" data-aos-delay="200">
+              D3 | Computer Engineering Study Program<br />
+              2024 - Now
             </p>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  Finalis IT Software Solutions for Business
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                Lomba Kompetensi Siswa (LKS) SMK Tingkat Nasional <br />
-                2023
-              </p>
+          </div>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                SMK Negeri 1 Muara Enim
+              </h3>
             </div>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  1st Place IT Software Solutions for Business
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                Lomba Kompetensi Siswa (LKS) SMK Tingkat Provinsi SUMSEL <br />
-                2023
-              </p>
-            </div>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  IT Support Internship
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                Vocational High School Internship Program at PT Satria Bahana
-                Sarana<br />
-                2022-2023
-              </p>
-            </div>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  Leader of Student Council
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                OSIS SMK Negeri 1 Muara Enim<br />
-                2022-2023
-              </p>
-            </div>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  1st Place IT Software Solutions for Business
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                Lomba Kompetensi Siswa (LKS) SMK Tingkat Kabupaten Muara Enim
-                <br />
-                2022
-              </p>
-            </div>
-            <div class="education-card" data-aos="zoom-in-right">
-              <div>
-                <h3 data-aos="flip-up" data-aos-delay="100">
-                  2nd Place Technological Innovation and More
-                </h3>
-              </div>
-              <p data-aos="flip-up" data-aos-delay="200">
-                Lomba Kreativitas dan Inovasi SMK Tingkat Provinsi SUMSEL
-                <br />
-                2021
-              </p>
-            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              SMK | Software Engineering Study Program<br />
+              2021 - 2024
+            </p>
           </div>
         </div>
       </div>
-      <!-- Resume -->
-  
+
+      <!-- Experiences & Achivements -->
+      <div class="educations" id="educations">
+        <div class="education-right">
+          <p class="education-title" data-aos="fade-right">
+            Experiences & Achivements.
+          </p>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                Information Technology Internship
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              PT Satria Bahana Sarana<br />
+              2026
+            </p>
+          </div>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                Web Application Development Mentor
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Cyborg IT Center <br />
+              2026
+            </p>
+          </div>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">KRSBI Programmer</h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Automation & Robotic Club of Sriwijaya <br />
+              2025 - Now
+            </p>
+          </div>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                Backend Development Core Team
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Google Developer Group on Campus Politeknik Negeri Sriwijaya
+              <br />
+              2024 - 2025
+            </p>
+          </div>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                Finalis IT Software Solutions for Business
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Lomba Kompetensi Siswa (LKS) SMK Tingkat Nasional <br />
+              2023
+            </p>
+          </div>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                1st Place IT Software Solutions for Business
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Lomba Kompetensi Siswa (LKS) SMK Tingkat Provinsi SUMSEL <br />
+              2023
+            </p>
+          </div>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                IT Support Internship
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Vocational High School Internship Program at PT Satria Bahana
+              Sarana<br />
+              2022-2023
+            </p>
+          </div>
+
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                Leader of Student Council
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              OSIS SMK Negeri 1 Muara Enim<br />
+              2022-2023
+            </p>
+          </div>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                1st Place IT Software Solutions for Business
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Lomba Kompetensi Siswa (LKS) SMK Tingkat Kabupaten Muara Enim
+              <br />
+              2022
+            </p>
+          </div>
+          <div class="education-card" data-aos="zoom-in-right">
+            <div>
+              <h3 data-aos="flip-up" data-aos-delay="100">
+                2nd Place Technological Innovation and More
+              </h3>
+            </div>
+            <p data-aos="flip-up" data-aos-delay="200">
+              Lomba Kreativitas dan Inovasi SMK Tingkat Provinsi SUMSEL
+              <br />
+              2021
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Resume -->
 
     <script src="../js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
